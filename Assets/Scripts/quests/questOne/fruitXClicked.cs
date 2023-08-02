@@ -8,7 +8,12 @@ public class fruitXClicked : MonoBehaviour
 
     private void OnMouseDown()
     {
-        fuitXClicked.Raise();
-        Destroy(gameObject);
+        if(data.currentQuest == questStates.One)
+        {
+            
+            fuitXClicked.Raise();
+            Destroy(gameObject);
+        }
+        
     }
 }

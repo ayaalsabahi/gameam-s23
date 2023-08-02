@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75b35aaa38aaa43ec84bddaaac682f2b, type: 3}
-  m_Name: fruitZCaught
+  m_Name: fruitYC
   m_EditorClassIdentifier: 
   listeners: []
