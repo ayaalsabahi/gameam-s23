@@ -1923,7 +1923,7 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7882802536159089768, guid: 933f077d3e0d7464cb2ed55e29b3ca46, type: 3}
+      - m_Target: {fileID: 1506524400}
         m_TargetAssemblyTypeName: UIOne, Assembly-CSharp
         m_MethodName: fruitZFound
         m_Mode: 1
@@ -1951,7 +1951,7 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7882802536159089768, guid: 933f077d3e0d7464cb2ed55e29b3ca46, type: 3}
+      - m_Target: {fileID: 1506524400}
         m_TargetAssemblyTypeName: UIOne, Assembly-CSharp
         m_MethodName: fruitYFound
         m_Mode: 1
