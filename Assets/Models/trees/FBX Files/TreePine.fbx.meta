@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: a91de3a770fe24ddbb2b87ee42b99221
+guid: 15dd23f9bbed64d448733ecd9b4ecc65
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vtx5
+    second: {fileID: 2100000, guid: 8bc2048947a85d74498dbe31bfdb6f7e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

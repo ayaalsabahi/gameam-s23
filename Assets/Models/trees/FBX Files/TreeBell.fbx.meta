@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 0c96155c5d1124a98a902282e37b2dd2
+guid: f8bd9d76a17414e1c8061c97fd704883
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vtx13
+    second: {fileID: 2100000, guid: 8bc2048947a85d74498dbe31bfdb6f7e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -68,13 +73,13 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 32
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
+    normalSmoothingSource: 3
   referencedClips: []
   importAnimation: 1
   humanDescription:
