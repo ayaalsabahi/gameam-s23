@@ -99,7 +99,6 @@ public class UIOne : MonoBehaviour
 
     private IEnumerator EndQuestCoroutine()
     {
-        // also add for other fruits later
         if (fruitXCount == fruitXGoal && fruitYCount == fruitYGoal && fruitZCount == fruitZGoal)
         {
             Debug.Log("finished quest one!");
@@ -110,6 +109,10 @@ public class UIOne : MonoBehaviour
             mainQuest.color = Color.white;
             subquestOne.text = "";
             subquestOne.color = Color.white;
+            subquestTwo.text = "";
+            subquestTwo.color = Color.white;
+            subquestThree.text = "";
+            subquestThree.color = Color.white;
         }
     }
 }
