@@ -31,9 +31,9 @@ public class UIOne : MonoBehaviour
     {
         mainQuest.text = "Forest Reached";
         mainQuest.color = UnityEngine.ColorUtility.TryParseHtmlString("#79733B", out Color color) ? color : Color.green;
-        subquestOne.text = "Fruit X: 0/" + fruitXGoal.ToString();
-        subquestTwo.text = "Fruit Y: 0/" + fruitYGoal.ToString();
-        subquestThree.text = "Fruit Z: 0/" + fruitZGoal.ToString();
+        subquestOne.text = "Mushrooms: 0/" + fruitXGoal.ToString();
+        subquestTwo.text = "Pumpkin: 0/" + fruitYGoal.ToString();
+        subquestThree.text = "Strawberries: 0/" + fruitZGoal.ToString();
     }
 
 
@@ -43,14 +43,14 @@ public class UIOne : MonoBehaviour
         if (fruitXCount >= fruitXGoal)
         {
             subquestOne.color = UnityEngine.ColorUtility.TryParseHtmlString("#79A637", out Color color) ? color : Color.green;
-            subquestOne.text = $"Found {fruitXGoal}/{fruitXGoal} X";
+            subquestOne.text = $"{fruitXGoal}/{fruitXGoal} strawberries";
             Debug.Log("found total fruit X!");
             StartEndQuestCoroutine();
         }
 
         else
         {
-            subquestOne.text = $"Fruit X:{fruitXCount}/{fruitXGoal}";
+            subquestOne.text = $"strawberries:{fruitXCount}/{fruitXGoal}";
         }
     }
 
@@ -64,14 +64,14 @@ public class UIOne : MonoBehaviour
                Debug.Log("NOT slayyyyy");
             }
             subquestTwo.color = UnityEngine.ColorUtility.TryParseHtmlString("#79A637", out Color color) ? color : Color.green;
-            subquestTwo.text = $"Found {fruitYGoal}/{fruitYGoal} Y";
+            subquestTwo.text = $"{fruitYGoal}/{fruitYGoal} mushrooms";
             Debug.Log("found total fruit Y!");
             StartEndQuestCoroutine();
         }
 
         else
         {
-            subquestTwo.text = $"Fruit Y:{fruitYCount}/{fruitYGoal}";
+            subquestTwo.text = $"mushrooms:{fruitYCount}/{fruitYGoal}";
         }
     }
 
@@ -81,14 +81,14 @@ public class UIOne : MonoBehaviour
         if (fruitZCount >= fruitZGoal)
         {
             subquestThree.color = UnityEngine.ColorUtility.TryParseHtmlString("#79A637", out Color color) ? color : Color.green;
-            subquestThree.text = $"Found {fruitZGoal}/{fruitZGoal} Z";
+            subquestThree.text = $"{fruitZGoal}/{fruitZGoal} pumpkin";
             Debug.Log("found total fruit Z!");
             StartEndQuestCoroutine();
         }
 
         else
         {
-            subquestThree.text = $"Fruit Z:{fruitZCount}/{fruitZGoal}";
+            subquestThree.text = $"pumpkin: {fruitZCount}/{fruitZGoal}";
         }
     }
 
