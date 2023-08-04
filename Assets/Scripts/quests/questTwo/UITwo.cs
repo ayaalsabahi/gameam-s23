@@ -49,6 +49,7 @@ public class UITwo : MonoBehaviour
         subQuestOneText.color = Color.white;
         mainQuestText.color = Color.white;
         mainQuestText.text = "Go to the library";
+        data.currentQuest = questStates.Three;
     }
 
     
