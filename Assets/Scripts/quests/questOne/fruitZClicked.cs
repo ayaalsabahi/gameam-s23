@@ -5,6 +5,7 @@ using UnityEngine;
 public class fruitZClicked : MonoBehaviour
 {
     public gameEvent fuitZClicked;
+    public float rotationSpeed = 30f;
 
     private void OnMouseDown()
     {
@@ -13,9 +14,12 @@ public class fruitZClicked : MonoBehaviour
             
             Destroy(gameObject);
             fuitZClicked.Raise();
-
-
         }
 
+    }
+
+    private void Update()
+    {
+        transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
     }
 }
