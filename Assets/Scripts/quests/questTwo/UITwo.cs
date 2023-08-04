@@ -25,14 +25,14 @@ public class UITwo : MonoBehaviour
     {
         buttonAnim.SetActive(true);
         buttonText.text = "Cook";
-        mainQuestText.color = Color.green;
+        mainQuestText.color = UnityEngine.ColorUtility.TryParseHtmlString("#79733B", out Color color) ? color : Color.green;
         subQuestOneText.text = "Cook";
     }
 
     public void activateAnimation()
     {
         //here will be the functionality to activate the animation that ruben is working on
-        subQuestOneText.color = Color.green;
+        subQuestOneText.color = UnityEngine.ColorUtility.TryParseHtmlString("#79A637", out Color color) ? color : Color.green;
         buttonText.text = "";
         StartEndQuestCoroutine();
     }
@@ -46,8 +46,8 @@ public class UITwo : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         subQuestOneText.text = "";
-        subQuestOneText.color = Color.white;
-        mainQuestText.color = Color.white;
+        subQuestOneText.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color) ? color : Color.black;
+        mainQuestText.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color1) ? color1 : Color.black;
         mainQuestText.text = "Go to the library";
         data.currentQuest = questStates.Three;
     }

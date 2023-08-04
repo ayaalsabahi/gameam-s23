@@ -25,7 +25,7 @@ public class questLocationDetecter : MonoBehaviour
         else if (other.gameObject.name == "fireplace" && data.currentQuest == questStates.Two)
             fireplaceReached.Raise();
 
-        else if (other.gameObject.name == "library" && data.currentQuest == questStates.Two)
+        else if (other.gameObject.name == "library" && data.currentQuest == questStates.Three)
             libraryReached.Raise();
     }
 

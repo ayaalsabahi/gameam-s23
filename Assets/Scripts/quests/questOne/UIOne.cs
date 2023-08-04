@@ -30,7 +30,7 @@ public class UIOne : MonoBehaviour
     public void forestFound()
     {
         mainQuest.text = "Forest Reached";
-        mainQuest.color = Color.green; //can change to hex later on
+        mainQuest.color = UnityEngine.ColorUtility.TryParseHtmlString("#79733B", out Color color) ? color : Color.green;
         subquestOne.text = "Fruit X: 0/" + fruitXGoal.ToString();
         subquestTwo.text = "Fruit Y: 0/" + fruitYGoal.ToString();
         subquestThree.text = "Fruit Z: 0/" + fruitZGoal.ToString();
@@ -42,7 +42,7 @@ public class UIOne : MonoBehaviour
         fruitXCount++;
         if (fruitXCount >= fruitXGoal)
         {
-            subquestOne.color = Color.green; //can change to hex later on
+            subquestOne.color = UnityEngine.ColorUtility.TryParseHtmlString("#79A637", out Color color) ? color : Color.green;
             subquestOne.text = $"Found {fruitXGoal}/{fruitXGoal} X";
             Debug.Log("found total fruit X!");
             StartEndQuestCoroutine();
@@ -63,7 +63,7 @@ public class UIOne : MonoBehaviour
             {
                Debug.Log("NOT slayyyyy");
             }
-            subquestTwo.color = Color.green; //can change to hex later on
+            subquestTwo.color = UnityEngine.ColorUtility.TryParseHtmlString("#79A637", out Color color) ? color : Color.green;
             subquestTwo.text = $"Found {fruitYGoal}/{fruitYGoal} Y";
             Debug.Log("found total fruit Y!");
             StartEndQuestCoroutine();
@@ -80,7 +80,7 @@ public class UIOne : MonoBehaviour
         fruitZCount++;
         if (fruitZCount >= fruitZGoal)
         {
-            subquestThree.color = Color.green; //can change to hex later on
+            subquestThree.color = UnityEngine.ColorUtility.TryParseHtmlString("#79A637", out Color color) ? color : Color.green;
             subquestThree.text = $"Found {fruitZGoal}/{fruitZGoal} Z";
             Debug.Log("found total fruit Z!");
             StartEndQuestCoroutine();
@@ -106,13 +106,13 @@ public class UIOne : MonoBehaviour
             yield return new WaitForSeconds(2f); // coroutine that waits for 2 seconds
 
             mainQuest.text = "Go to the Fireplace";
-            mainQuest.color = Color.white;
+            mainQuest.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color) ? color : Color.black;
             subquestOne.text = "";
-            subquestOne.color = Color.white;
+            subquestOne.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color1) ? color1 : Color.black;
             subquestTwo.text = "";
-            subquestTwo.color = Color.white;
+            subquestTwo.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color2) ? color2 : Color.black;
             subquestThree.text = "";
-            subquestThree.color = Color.white;
+            subquestThree.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color3) ? color3 : Color.black;
         }
     }
 }
