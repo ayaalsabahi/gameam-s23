@@ -69,7 +69,7 @@ public class Book : MonoBehaviour {
     FlipMode mode;
 
 
-    public gameEvent buttonPressed;
+    public gameEvent reachedLastPage;
 
     void Start()
     {
@@ -98,8 +98,7 @@ public class Book : MonoBehaviour {
         ShadowLTR.rectTransform.sizeDelta = new Vector2(pageWidth, shadowPageHeight);
         ShadowLTR.rectTransform.pivot = new Vector2(0, (pageWidth / 2) / shadowPageHeight);
 
-        //added
-        libraryButton.gameObject.SetActive(false);
+        
     }
 
     private void CalcCurlCriticalPoints()
@@ -385,8 +384,7 @@ public class Book : MonoBehaviour {
             //I added
             RightNext.sprite = background;
             Debug.Log("reached last page");
-            libraryButton.gameObject.SetActive(true);
-            buttonPressed.Raise();
+            reachedLastPage.Raise();
             //add an event that says that the button has been pressed -> once button is pressed
             //
             // do the same thing with the other quests in terms of green etc.
