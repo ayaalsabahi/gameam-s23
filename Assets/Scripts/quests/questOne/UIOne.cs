@@ -16,9 +16,9 @@ public class UIOne : MonoBehaviour
     int fruitYCount = 0;
     int fruitZCount = 0;
 
-    public int fruitXGoal = 1; //make sure we can change the goal number from UI
-    public int fruitYGoal = 1;
-    public int fruitZGoal = 1;
+    public int fruitXGoal; //make sure we can change the goal number from UI
+    public int fruitYGoal;
+    public int fruitZGoal;
 
 
     // Start is called before the first frame update
@@ -31,9 +31,9 @@ public class UIOne : MonoBehaviour
     {
         mainQuest.text = "Forest Reached";
         mainQuest.color = UnityEngine.ColorUtility.TryParseHtmlString("#79733B", out Color color) ? color : Color.green;
-        subquestOne.text = "Mushrooms: 0/" + fruitXGoal.ToString();
-        subquestTwo.text = "Pumpkin: 0/" + fruitYGoal.ToString();
-        subquestThree.text = "Strawberries: 0/" + fruitZGoal.ToString();
+        subquestOne.text = "Strawberries: 0/" + fruitXGoal.ToString();
+        subquestTwo.text = "Mushroom: 0/" + fruitYGoal.ToString();
+        subquestThree.text = "Pumpkin: 0/" + fruitZGoal.ToString();
     }
 
 
@@ -104,7 +104,6 @@ public class UIOne : MonoBehaviour
             Debug.Log("finished quest one!");
             data.currentQuest = questStates.Two;
             yield return new WaitForSeconds(2f); // coroutine that waits for 2 seconds
-
             mainQuest.text = "Go to the Fireplace";
             mainQuest.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color) ? color : Color.black;
             subquestOne.text = "";

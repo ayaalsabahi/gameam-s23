@@ -28,7 +28,7 @@ public class UIThree : MonoBehaviour
 
     public void buttonPressed()
     {
-        SceneManager.LoadScene("BookScene");
+        SceneManager.LoadScene("latestBookScene");
     }
 
     //this is when the player would have returned to the scene
