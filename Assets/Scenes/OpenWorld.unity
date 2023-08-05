@@ -1246,6 +1246,7 @@ GameObject:
   - component: {fileID: 444755746}
   - component: {fileID: 444755751}
   - component: {fileID: 444755752}
+  - component: {fileID: 444755754}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1380,6 +1381,38 @@ MonoBehaviour:
   forestReached: {fileID: 11400000, guid: ec7f7356210b94368981783f0c42da9c, type: 2}
   fireplaceReached: {fileID: 11400000, guid: 6e385503abfa74b67b192c3212d0e289, type: 2}
   libraryReached: {fileID: 11400000, guid: f146c75de853b499693a20a61f623eb8, type: 2}
+--- !u!114 &444755754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444755745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4446b7192d8bf914ebaf797b64fe8b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  BookPanel: {fileID: 0}
+  background: {fileID: 0}
+  bookPages: []
+  interactable: 1
+  enableShadowEffect: 1
+  currentPage: 0
+  libraryButton: {fileID: 0}
+  ClippingPlane: {fileID: 0}
+  NextPageClip: {fileID: 0}
+  Shadow: {fileID: 0}
+  ShadowLTR: {fileID: 0}
+  Left: {fileID: 0}
+  LeftNext: {fileID: 0}
+  Right: {fileID: 0}
+  RightNext: {fileID: 0}
+  OnFlip:
+    m_PersistentCalls:
+      m_Calls: []
+  buttonPressed: {fileID: 0}
 --- !u!1001 &538826610
 PrefabInstance:
   m_ObjectHideFlags: 0
