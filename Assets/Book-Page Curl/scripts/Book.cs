@@ -70,6 +70,7 @@ public class Book : MonoBehaviour {
 
 
     public gameEvent reachedLastPage;
+    public Image overlayBlackScreen;
 
     void Start()
     {
@@ -98,7 +99,8 @@ public class Book : MonoBehaviour {
         ShadowLTR.rectTransform.sizeDelta = new Vector2(pageWidth, shadowPageHeight);
         ShadowLTR.rectTransform.pivot = new Vector2(0, (pageWidth / 2) / shadowPageHeight);
 
-        
+        //I added
+        overlayBlackScreen.gameObject.SetActive(false);
     }
 
     private void CalcCurlCriticalPoints()
@@ -385,6 +387,7 @@ public class Book : MonoBehaviour {
             RightNext.sprite = background;
             Debug.Log("reached last page");
             reachedLastPage.Raise();
+            overlayBlackScreen.gameObject.SetActive(true);
             //add an event that says that the button has been pressed -> once button is pressed
             //
             // do the same thing with the other quests in terms of green etc.
