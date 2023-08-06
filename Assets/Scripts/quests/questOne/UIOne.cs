@@ -25,6 +25,7 @@ public class UIOne : MonoBehaviour
     void Start()
     {
         mainQuest.text = "Go to the forest";
+        subquestOne.text = "(where the pink trees are)";
     }
 
     public void forestFound()
@@ -106,7 +107,7 @@ public class UIOne : MonoBehaviour
             yield return new WaitForSeconds(2f); // coroutine that waits for 2 seconds
             mainQuest.text = "Go to the Fireplace";
             mainQuest.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color) ? color : Color.black;
-            subquestOne.text = "";
+            subquestOne.text = "(where you will find the cauldron)";
             subquestOne.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color1) ? color1 : Color.black;
             subquestTwo.text = "";
             subquestTwo.color = UnityEngine.ColorUtility.TryParseHtmlString("#572526", out Color color2) ? color2 : Color.black;
