@@ -12,6 +12,7 @@ public class UITwo : MonoBehaviour
     [SerializeField] TMP_Text buttonText;
     [SerializeField] TMP_Text mainQuestText;
     [SerializeField] TMP_Text subQuestOneText;
+    [SerializeField] CookingCauldron cauldron;
 
     //add two invisible buttons for at the library;
 
@@ -32,6 +33,7 @@ public class UITwo : MonoBehaviour
     public void activateAnimation()
     {
         //here will be the functionality to activate the animation that ruben is working on
+        cauldron.startCooking();
         subQuestOneText.color = UnityEngine.ColorUtility.TryParseHtmlString("#79A637", out Color color) ? color : Color.green;
         buttonText.text = "";
         StartEndQuestCoroutine();

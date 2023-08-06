@@ -22,7 +22,7 @@ public class CookingCauldron : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isCooking = Input.GetKey(KeyCode.F);
+        //isCooking = Input.GetKey(KeyCode.F);
         anim.SetBool("IsCooking", isCooking);
     }
 }

@@ -344,10 +344,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 683908102956080653, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 955511409861625126, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
       propertyPath: m_Name
       value: Cauldron
@@ -358,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2893789006220457716, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 494.44
+      value: 493.96
       objectReference: {fileID: 0}
     - target: {fileID: 2893789006220457716, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
       propertyPath: m_LocalPosition.y
@@ -366,7 +362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2893789006220457716, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 493.7
+      value: 490.66
       objectReference: {fileID: 0}
     - target: {fileID: 2893789006220457716, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
       propertyPath: m_LocalRotation.w
@@ -396,12 +392,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7942380280728932584, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
+--- !u!114 &120583971 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5276261945647506986, guid: 6f4177f2710fbf94ebe70de29c9f7603, type: 3}
+  m_PrefabInstance: {fileID: 120583970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73324854b73411740a2bab78f9939e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &139259169
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +646,7 @@ MonoBehaviour:
   buttonText: {fileID: 1733288801}
   mainQuestText: {fileID: 317152446}
   subQuestOneText: {fileID: 1817828687}
+  cauldron: {fileID: 120583971}
 --- !u!114 &162514081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,7 +730,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192787915}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.96}
+  m_LocalPosition: {x: 0, y: 0, z: 0.17}
   m_LocalScale: {x: 1.2033, y: 1.2033, z: 1.2033}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3395,7 +3399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309991273}
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.2000122, y: 2.23, z: 2.8099976}
+  m_LocalPosition: {x: 0, y: 2.23, z: 0}
   m_LocalScale: {x: 0.28593498, y: 1.4508, z: 1.4508}
   m_ConstrainProportionsScale: 0
   m_Children: []
